@@ -16,8 +16,8 @@ from xgboost import XGBClassifier
 !unzip /content/mars_final_private.zip
 train_data = pd.read_csv('/content/mars-train-class.csv')
 train_data.head(10)
-#test_data = pd.read_csv('/content/mars-private_test-class.csv')
-#test_data.head(10)
+test_data = pd.read_csv('/content/mars-private_test-class.csv')
+test_data.head(10)
 X_train = train_data.drop('Тип марсианина', axis=1)
 y_train = train_data['Тип марсианина']
 #X_test = test_data
